@@ -24,9 +24,9 @@ int main() {
     {
         // You can use either numeric offsets...
         // getInt(1) returns the first column
-        cout << "id = " << res->getInt(1);
+        std::cout << "id = " << res->getInt(1);
         // ... or column names for accessing results (recommended).
-        cout << ", label = '" << res->getString("label") << "'" << endl;
+        std::cout << ", label = '" << res->getString("label") << "'" << std::endl;
     }
 
     delete stmt;
