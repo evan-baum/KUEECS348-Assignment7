@@ -6,6 +6,7 @@
 #include <cppconn/exception.h>
 
 int main() {
+    cout << "Enter";
     sql::mysql::MySQL_Driver *driver;
     sql::Connection *con; // to establish connection
     sql::Statement *stmt; // to execute SQL statement
