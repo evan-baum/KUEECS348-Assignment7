@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <mysql_driver.h>
 #include <mysql_connection.h>
 #include <cppconn/statement.h>
@@ -16,7 +17,7 @@ stmt = con->createStatement();
 
 stmt->execute("USE 348f25_e724b371"); // entering database
 
-cout << 'Prompt 1:' << endl;
+cout << "Prompt 1:" << endl;
 res = stmt->executeQuery("SELECT * FROM Student WHERE StdMajor LIKE 'IS'");
 while (res->next())
 {
