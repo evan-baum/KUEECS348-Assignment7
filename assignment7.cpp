@@ -18,7 +18,7 @@ int main() {
 
     stmt->execute("USE 348f25_e724b371"); // entering database
 
-    cout << "Prompt 1:" << endl;
+    std::cout << "Prompt 1:" << std::endl;
     res = stmt->executeQuery("SELECT * FROM Student WHERE StdMajor LIKE 'IS'");
     while (res->next())
     {
